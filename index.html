@@ -1,0 +1,118 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <base target="_blank">
+
+</head>
+
+<script>
+    function toggleVisibility(divName) {
+        document.getElementById(divName).classList.toggle("hidden");
+    }
+</script>
+
+<body>
+    <div class = "title-panel">
+        <img src="./images/me.jpeg" style="height: 100%; border-radius: 30px">
+        <div class="bio-text">
+            <div class = "greeting">Hi, I'm Anna Kaufman.</div>
+            <div class = "intro">I am a sophomore at Tufts University persuing an interest in computer science and education.</div>
+        </div>
+    </div>
+    <div class = "projects">
+        <div class="left-col">
+            <div class="project-header">Projects</div>
+            <div class="project" onclick="toggleVisibility('learnknn-details')">
+                <img src="./images/learn-knn-cover.png" class="project-image">
+                <div class="project-text">
+                    <div class="project-h1">Learn KNN</div>
+                    <div class="project-normal">A minimal text webpage that gives users a visual representation of a KNN algorithm through LEGO SPIKE.</div>
+                    <div id="learnknn-details" class="hidden">
+                        <div class="project-h1 top-break">About</div>
+                        <div class="project-normal">The goal of this webpage was to reduce the black box feeling of AI by giving users a visual display of how a KNN algorithm assigns data points to classes. This page was designed for an activity with 2nd grade children, where groups can train their LEGO SPIKE motor to start and stop based on how close or far their hand is from a LEGO SPIKE distance sensor. Users add points to a number line by moving their hand closer and farther from the distance sensor and clicking the plus button on the desired class for different distances. When running their model, users see the purple dot moving as a representation of how far their hand is from the distance sensor. A box appears around the K nearest neighbors, and changes color based on which class has the most nearest neigbors.</div>
+                        <a href="https://akaufman.pyscriptapps.com/learn-knn/v2/" class="project-h1">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project" onclick="toggleVisibility('simplemotorcontrol-details')">
+                <img src="./images/simple-motor-control-cover.png" class="project-image">
+                <div class="project-text">
+                    <div class="project-h1">Simple Motor Control</div>
+                    <div class="project-normal">A minimal text webpage that gives users a low floor way to control LEGO Science Kit motors.</div>
+                    <div id="simplemotorcontrol-details" class="hidden">
+                        <div class="project-h1 top-break">About</div>
+                        <div class="project-normal">The goal of this webpage was to give users of all ages the abiltiy to simply program LEGO Science Kit motors. It uses limited text and buttons to give young users a way to control the direction of the motor and the time that it rotates without feeling overwhelmed by information.</div>
+                        <a class="project-h1 top-break" href="https://akaufman.pyscriptapps.com/simple-motor-control/v5/">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project" onclick="toggleVisibility('whegs-details')">
+                <img src="./images/whegs.png" class="project-image">
+                <div class="project-text">
+                    <div class="project-h1">RC Car "Whegs"</div>
+                    <div class="project-normal">3D printed wheel-legs and laser cut ring collector for RC car to drive through obstacle course.</div>
+                    <div id="whegs-details" class="hidden">
+                        <div class="project-h1 top-break">About</div>
+                        <div class="project-normal">
+                            This was a 4 person group project for my Introduction to Engineering class to design and 3D print a set of whegs (wheel-legs) that could attach to an RC car that would traverse a timed obstacle course that included wobbly and uneven surfaces, and ~3 inch walls to climb. Additionally, the car could score extra points with an "adventurer" that would collect hanging rings along the course. Our whegs had four spokes with hooked edges, and we added hot glue dots to the edges to give them some extra grip. Our adventurer was a laser cut c-shaped bar that would collect rings when the car drove directly into it and hold them in the center of the car. Our car performed very well, being one of two out of the 15 cars in the class to complete all 4 obstacles, and the only car to collect and hold onto all 4 rings. Additionally, we were in the high scorers in creativity and aesthetics, and got the overall highest score.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="project" onclick="toggleVisibility('simplemodeltraining-details')">
+                <img src="./images/simple-model-training-cover.png" class="project-image">
+                <div class="project-text">
+                    <div class="project-h1">Simple Model Training</div>
+                    <div class="project-normal">A minimal text webpage that gives users a low floor model training interface with the LEGO Science Kit.</div>
+                    <div id="simplemodeltraining-details" class="hidden">
+                        <div class="project-h1 top-break">About</div>
+                        <div class="project-normal">
+                            The goal of this webpage was to give users a very simple, textless webpage that they can use to train a model to control LEGO Science Motors. Users can connect to a motor and color sensor, then are guided through adding color data points to a go class and a stop class. Users can then run their trained model to make the motor stop and go based on different color inputs from the color sensor. To emphasize simplicity, this model training interface has very limited features.</div>
+                        <div class="project-h1 top-break">Demonstration</div>
+                        <video muted controls width="100%">
+                            <source src="./images/simple-model-training-demo.mp4" type="video/mp4">
+                            Your browser does not support this video.
+                        </video>
+                        <a class="project-h1 top-break" href="https://akaufman.pyscriptapps.com/simple-model-training/latest/">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project" onclick="toggleVisibility('knockdetector-details')">
+                <img src="./images/knock-detector.jpg" class="project-image">
+                <div class="project-text">
+                    <div class="project-h1">Piezoelectric Knock Counter</div>
+                    <div class="project-normal">A device that counts the number of times the piezoelectric film was knocked on.</div>
+                    <div id="knockdetector-details" class="hidden">
+                        <div class="project-h1 top-break">About</div>
+                        <div class="project-normal">
+                            This was a 4 person group project for my Introduction to Engineering class, where we were tasked to use piezoelectric film for some device that could theoretically be used for a made up spy agency. My group decided to make a device that would count the number of times someone knocked on the plastic film cover, and play a tone if the number of knocks matches a passcode number of knocks. We created a MATLAB program interfaced with an Arduino Uno connected to a breadboard to accomplish this task. To create the program, we first used an oscilloscope to understand what voltage reading from the piezoelectric film indicated a knock. Then, we set up the program to collect data from the Arduino every 0.05 seconds, and then determine how many local maximums were in the data that were above our found knock threshold, and return that number.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project" onclick="toggleVisibility('adirondacks-details')">
+                <img src="./images/adirondack-chairs.JPG" class="project-image">
+                <div class="project-text">
+                    <div class="project-h1">Adirondack Chairs and Table</div>
+                    <div class="project-normal">A hand crafted set of Adirondack chairs and matching side table.</div>
+                    <div id="adirondacks-details" class="hidden">
+                        <div class="project-h1 top-break">About</div>
+                        <div class="project-normal">
+                            For my senior project in high school, I wanted to learn woodworking skills, so I chose a project of making these Adirondack chairs and a side table. As this was my first big woodworking project, I followed a premade plan for the chairs, but I also wanted to design and build something of my own, so I designed the table.  All the pieces are made of cedar 2x4s and 1x4s, and they were finished with a few coats of tung oil. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="email">annaskaufman510@gmail.com</div>
+        </div>
+    </div>
+</body>
