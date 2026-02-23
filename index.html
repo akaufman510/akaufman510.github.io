@@ -14,7 +14,15 @@
 
 <script>
     function toggleVisibility(divName) {
-        document.getElementById(divName).classList.toggle("hidden");
+        const content = document.getElementById(divName);  
+        if (content.style.height && content.style.height !== "0px") {  
+            content.style.height = content.scrollHeight + "px"; // reset to full  
+            requestAnimationFrame(() => {  
+            content.style.height = "0px";  
+            });  
+        } else {  
+            content.style.height = content.scrollHeight + "px";  
+        } 
     }
 </script>
 
