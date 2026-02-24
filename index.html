@@ -31,21 +31,27 @@
         <img src="./images/me.jpeg" style="height: 100%; border-radius: 30px">
         <div class="bio-text">
             <div class = "greeting">Hi, I'm Anna Kaufman.</div>
-            <div class = "intro">I am a sophomore at Tufts University persuing an interest in computer science and education.</div>
+            <div class = "intro">I am a sophomore at Tufts University pursuing a bachelors degree in computer science with an interest in education</div>
         </div>
     </div>
     <div class = "projects">
         <div class="left-col">
             <div class="project-header">Projects</div>
-            <div class="project" onclick="toggleVisibility('learnknn-details')">
-                <img src="./images/learn-knn-cover.png" class="project-image">
+            <div class="project" onclick="toggleVisibility('simplemodeltraining-details')">
+                <img src="./images/simple-model-training-cover.png" class="project-image">
                 <div class="project-text">
-                    <div class="project-h1">Learn KNN</div>
-                    <div class="project-normal">A minimal text webpage that gives users a visual representation of a KNN algorithm through LEGO SPIKE.</div>
-                    <div id="learnknn-details" class="hidden">
+                    <div class="project-h1">Simple Model Training</div>
+                    <div class="project-normal">A minimal text webpage that gives users a low floor model training interface with the LEGO Science Kit.</div>
+                    <div id="simplemodeltraining-details" class="hidden">
                         <div class="project-h1 top-break">About</div>
-                        <div class="project-normal">The goal of this webpage was to reduce the black box feeling of AI by giving users a visual display of how a KNN algorithm assigns data points to classes. This page was designed for an activity with 2nd grade children, where groups can train their LEGO SPIKE motor to start and stop based on how close or far their hand is from a LEGO SPIKE distance sensor. Users add points to a number line by moving their hand closer and farther from the distance sensor and clicking the plus button on the desired class for different distances. When running their model, users see the purple dot moving as a representation of how far their hand is from the distance sensor. A box appears around the K nearest neighbors, and changes color based on which class has the most nearest neigbors.</div>
-                        <a href="https://akaufman.pyscriptapps.com/learn-knn/v2/" class="project-h1">Visit</a>
+                        <div class="project-normal">
+                            The goal of this webpage was to give users a very simple, textless webpage that they can use to train a model to control LEGO Science Motors. Users can connect to a motor and color sensor, then are guided through adding color data points to a go class and a stop class. Users can then run their trained model to make the motor stop and go based on different color inputs from the color sensor. To emphasize simplicity, this model training interface has very limited features.</div>
+                        <div class="project-h1 top-break">Demonstration</div>
+                        <video muted controls width="100%">
+                            <source src="./images/simple-model-training-demo.mp4" type="video/mp4">
+                            Your browser does not support this video.
+                        </video>
+                        <a class="project-h1 top-break" href="https://akaufman.pyscriptapps.com/simple-model-training/latest/">Visit</a>
                     </div>
                 </div>
             </div>
@@ -74,23 +80,31 @@
                     </div>
                 </div>
             </div>
+            <div class="email">annaskaufman510@gmail.com</div>
         </div>
         <div class="right-col">
-            <div class="project" onclick="toggleVisibility('simplemodeltraining-details')">
-                <img src="./images/simple-model-training-cover.png" class="project-image">
+            <div class="project" onclick="toggleVisibility('learnknn-details')">
+                <img src="./images/learn-knn-cover.png" class="project-image">
                 <div class="project-text">
-                    <div class="project-h1">Simple Model Training</div>
-                    <div class="project-normal">A minimal text webpage that gives users a low floor model training interface with the LEGO Science Kit.</div>
-                    <div id="simplemodeltraining-details" class="hidden">
+                    <div class="project-h1">Learn KNN</div>
+                    <div class="project-normal">A minimal text webpage that gives users a visual representation of a KNN algorithm through LEGO SPIKE.</div>
+                    <div id="learnknn-details" class="hidden">
+                        <div class="project-h1 top-break">About</div>
+                        <div class="project-normal">The goal of this webpage was to reduce the black box feeling of AI by giving users a visual display of how a KNN algorithm assigns data points to classes. This page was designed for an activity with 2nd grade children, where groups can train their LEGO SPIKE motor to start and stop based on how close or far their hand is from a LEGO SPIKE distance sensor. Users add points to a number line by moving their hand closer and farther from the distance sensor and clicking the plus button on the desired class for different distances. When running their model, users see the purple dot moving as a representation of how far their hand is from the distance sensor. A box appears around the K nearest neighbors, and changes color based on which class has the most nearest neigbors.</div>
+                        <a href="https://akaufman.pyscriptapps.com/learn-knn/v2/" class="project-h1">Visit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project" onclick="toggleVisibility('placemats-details')">
+                <img src="./images/placemats-example.png" class="project-image">
+                <div class="project-text">
+                    <div class="project-h1">NGSS Placemats</div>
+                    <div class="project-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequuntur amet quisquam blanditiis deserunt quos labore quae dolore libero.</div>
+                    <div id="placemats-details" class="hidden">
                         <div class="project-h1 top-break">About</div>
                         <div class="project-normal">
-                            The goal of this webpage was to give users a very simple, textless webpage that they can use to train a model to control LEGO Science Motors. Users can connect to a motor and color sensor, then are guided through adding color data points to a go class and a stop class. Users can then run their trained model to make the motor stop and go based on different color inputs from the color sensor. To emphasize simplicity, this model training interface has very limited features.</div>
-                        <div class="project-h1 top-break">Demonstration</div>
-                        <video muted controls width="100%">
-                            <source src="./images/simple-model-training-demo.mp4" type="video/mp4">
-                            Your browser does not support this video.
-                        </video>
-                        <a class="project-h1 top-break" href="https://akaufman.pyscriptapps.com/simple-model-training/latest/">Visit</a>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id labore non accusantium consectetur excepturi placeat mollitia deserunt ex ipsam, dicta eligendi quis unde deleniti natus itaque nemo quam repellendus?
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,7 +134,6 @@
                     </div>
                 </div>
             </div>
-            <div class="email">annaskaufman510@gmail.com</div>
         </div>
     </div>
 </body>
